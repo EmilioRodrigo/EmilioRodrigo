@@ -1,0 +1,279 @@
+.cases-wrap-ontime
+  overflow: hidden
+  max-width: calc(100% - 160px)
+  margin: 0 auto
+
+  @media (max-width: 700px)
+    max-width: 100%
+
+.header-ontime
+  background:
+    image: url(/assets/img/cases/ontime/header-bg.jpg)
+    repeat: no-repeat
+    position: center
+    size: cover
+  height: 100vh
+
+  @media (max-width: 1024px)
+    height: 75vh
+
+
+section.case-ontime
+  .intro
+    padding: 9rem 0
+    p
+      font-size: 1.4rem
+      color: $black
+      text-align: center
+      @extend %flex
+      max-width: 65rem
+      width: 90%
+      margin: 0 auto
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+
+      @media (max-width: 800px)
+        font-size: 1.2rem
+
+  .isometric
+    background:
+      image: url(/assets/img/cases/ontime/isometric.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: $white
+    height: 160vh
+
+    @media (max-width: 900px)
+      height: 100vh
+
+  .concept, .services
+    background: #af2313
+    padding: 12rem 0
+
+    h2
+      font-size: 1.8rem
+      text-align: center
+      color: $white
+      text-shadow: none
+      margin: 1rem auto 2rem auto
+
+    article, p
+      color: $white
+      max-width: 50rem
+      width: 90%
+      margin: 0 auto
+      text-align: center
+      font-size: 1rem
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+      span
+        font-weight: 700
+
+
+  .smartphones
+    background:
+      image: url(/assets/img/cases/ontime/smartphones.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: #af2313
+    height: 95vh
+
+    @media (max-width: 1020px)
+      height: 70vh
+
+    @media (max-width: 1020px)
+      height: 55vh
+
+    @media (max-width: 690px)
+      height: 50vh
+
+  .browsers
+    background:
+      image: url(/assets/img/cases/ontime/browsers.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: $black
+    height: 150vh
+    padding: 6em 0
+
+    @media (max-width: 1400px)
+      height: 100vh
+
+    @media (max-width: 800px)
+      height: 80vh
+
+  .street-ad
+    background:
+      image: url(/assets/img/cases/ontime/street-ad.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: $black
+    height: 100vh
+    padding: 6em 0
+
+    @media (max-width: 1200px)
+      height: 80vh
+
+    @media (max-width: 800px)
+      height: 60vh
+
+    @media (max-width: 600px)
+      height: 40vh
+
+    @media (max-width: 400px)
+      height: 35vh
+
+  .experience
+    background: $black
+    padding: 12rem 0
+
+    h2
+      font-size: 1.8rem
+      text-align: center
+      color: $white
+      text-shadow: none
+      margin: 1rem auto 2rem auto
+
+    article, p
+      color: $white
+      max-width: 50rem
+      width: 90%
+      margin: 0 auto
+      text-align: center
+      font-size: 1rem
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+      span
+        font-weight: 700
+
+
+  .conclusion
+    background: $white
+    padding: 12rem 0
+
+    h2
+      font-size: 1.8rem
+      text-align: center
+      color: $black
+      text-shadow: none
+      margin: 1rem auto 2rem auto
+
+    article, p
+      color: $black
+      max-width: 50rem
+      width: 90%
+      margin: 0 auto
+      text-align: center
+      font-size: 1rem
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+      span
+        font-weight: 700
+
+  .responsive
+    background:
+      image: url(/assets/img/cases/ontime/responsive.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: #af2313
+    height: 95vh
+
+    @media (max-width: 1500px)
+      height: 71vh
+
+    @media (max-width: 1050px)
+      height: 70vh
+
+    @media (max-width: 850px)
+      height: 60vh
+
+
+
+  .map
+    background:
+      image: url(/assets/img/cases/ontime/map.png)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: $black
+    height: 100vh
+    @extend %flex
+
+    .map-info
+      @extend %flex
+      @extend %guide
+      max-width: 60rem
+
+      @media (max-width: 1000px)
+        flex-wrap: wrap
+
+      figcaption
+        color: $white
+        font-weight: 700
+        margin-top: 1em
+        font-size: 1.2rem
+        max-width: 200px
+        text-align: center
+        line-height: 1.5
+
+
+
+  .preview
+    background:
+      image: url(/assets/img/cases/ontime/preview.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: #af2313
+    height: 128vw
+
+
+
+  .tablet
+    background:
+      image: url(/assets/img/cases/ontime/tablet.jpg)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: $white
+    height: 120vh
+
+    @media (max-width: 1500px)
+      height: 80vh
+
+    @media (max-width: 650px)
+      height: 65vh
+
+    @media (max-width: 400px)
+      height: 50vh
+
+
+@media (max-width: 1000px)
+  section.case-ontime
+    .map
+      figure
+        width: 50%
+        margin: 2rem 0
+
+      figcaption
+        margin: 0 auto
+
+
+@media (max-width: 500px)
+  section.case-ontime
+    .map
+      figure
+        transform: scale(0.7)

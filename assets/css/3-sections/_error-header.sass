@@ -1,0 +1,62 @@
+header.error-header
+  height: 90vh
+  position: relative
+  background: $red
+
+  @media (max-width: 850px)
+    height: 75vh
+
+  div.welcome
+    color: $white
+    max-width: 700px
+    position: absolute
+    bottom: 60px
+    left: 60px
+
+    @media (max-width: 1720px)
+      bottom: 60px
+      left: 130px
+
+    @media (max-width: 1024px)
+      max-width: 600px
+
+    @media (max-width: 850px)
+      max-width: 500px
+
+    @media (max-width: 700px)
+      left: 25px
+      bottom: 25px
+      max-width: 400px
+      width: 90%
+
+    a
+      font-size: 48px
+      line-height: 1.3
+      color: $yellow
+      position: relative
+      @extend %transition
+
+      &:hover
+        color: $dark-grey
+
+        span
+          width: 100%
+
+      span
+        display: block
+        width: 0%
+        position: absolute
+        bottom: -10px
+        left: 0
+        height: 4px
+        background: $dark-grey
+        @extend %transition
+
+      @media (max-width: 1024px)
+        font-size: 40px
+
+      @media (max-width: 850px)
+        font-size: 32px
+
+      @media (max-width: 700px)
+        font-size: 28px

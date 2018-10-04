@@ -1,0 +1,13 @@
+// Grid system
+div.portfolio-wrap
+  @extend %guide
+
+
+div.work-web,
+div.work-branding,
+div.work-photography
+  li
+    opacity: 0
+    transform: translateY(120px)
+    @extend %transition
+    transition-duration: 0.4s

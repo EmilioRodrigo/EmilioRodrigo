@@ -1,0 +1,104 @@
+div.cta
+  height: 80px
+  align-items: center
+
+  div.col-3
+    background: $red
+    color: $white
+
+    @media (max-width: 770px)
+      width: 62.5%
+
+    @media (max-width: 525px)
+      width: 100%
+
+    a
+      padding-left: 64px
+      color: $white
+      font-size: 24px
+      display: flex
+      width: 100%
+      height: 100%
+      line-height: 80px
+      position: relative
+
+      @media (max-width: 850px)
+        padding-left: 32px
+
+      @media (max-width: 525px)
+        padding-left: 64px
+
+      .arrow-right
+        display: inline-block
+        top: -8px
+        width: 38px
+        height: 89px
+        right: 40px
+        position: absolute
+        transform: translateX(0%)
+        @extend %transition
+
+
+      &:hover .arrow-right
+        transform: translateX(50%)
+
+
+  div.col-5
+    background: $light-grey
+
+    @media (max-width: 770px)
+      width: 37.5%
+
+    @media (max-width: 525px)
+      width: 0%
+
+
+.about-cta,
+.persovuses-cta,
+.residencia-cta,
+.octogon-cta,
+.all-cta,
+.cases-cta
+  div.col-3
+    transform: translateX(100%)
+    @extend %transition
+    transition-duration: 0.4s
+
+.ftm-cta,
+.ontime-cta
+  div.col-3
+    transform: translateX(-100%)
+    @extend %transition
+    transition-duration: 0.4s
+
+
+div.cases-cta
+  div.col-3
+    a
+      padding-left: 40px
+
+
+@media (max-width: 1350px)
+  div.cases-cta
+    div.col-3
+      width: 62.5%
+
+    div.col-5
+      width: 37.5%
+
+
+@media (max-width: 1070px)
+  div.cases-cta
+    div.col-3
+      width: 100%
+
+    div.col-5
+      width: 0%
+
+
+@media (max-width: 650px)
+  div.cases-cta
+    div.col-3
+      a
+        span.arrow-right
+          right: 16px

@@ -1,0 +1,41 @@
+// GRIDS & LAYOUT
+
+%flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+%guide
+  max-width: calc(100vw - 160px)
+  margin: 0 auto
+  width: 100%
+
+  @media (max-width: 1250px)
+    max-width: 100%
+
+// ANIMATIONS
+
+%transition
+  transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+
+
+
+// CASE STUDIES ANIMATIONS
+
+.slideIn
+  opacity: 1 !important
+  transform: translateY(0px) !important
+  -moz-transform: translateY(0px) !important
+  -o-transform: translateY(0px) !important
+
+.fadeIn
+  opacity: 1 !important
+
+
+.slideX
+  opacity: 1 !important
+  transform: translateX(0%) !important
+  -moz-transform: translateX(0%) !important
+  -o-transform: translateX(0%) !important

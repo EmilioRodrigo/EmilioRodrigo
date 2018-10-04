@@ -1,0 +1,223 @@
+div.navigation-wrapper
+  height: 80px
+  width: 100%
+  background: $white
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 9999
+
+  @media (max-width: 850px)
+    height: 56px
+
+
+  div.logo
+    width: 80px
+    height: 80px
+    background: $dark-grey
+    position: absolute
+    @extend %flex
+    justify-content: center
+    z-index: 5
+
+    @media (max-width: 850px)
+      width: 56px
+      height: 56px
+
+    svg#logo-icon
+      width: 45px
+      height: 45px
+
+      @media (max-width: 850px)
+        width: 30px
+        height: 30px
+
+  div.menu-button
+    width: 80px
+    height: 80px
+    background: $dark-grey
+    position: absolute
+    right: 0
+    @extend %flex
+    flex-direction: column
+    justify-content: center
+    z-index: 5
+
+    @media (max-width: 850px)
+      width: 56px
+      height: 56px
+
+    div.menu-icon
+      width: 40px
+      height: 40px
+      cursor: pointer
+      position: relative
+      top: 3px
+      z-index: 3
+      @extend %flex
+      flex-direction: column
+      justify-content: center
+
+      @media (max-width: 850px)
+        width: 34px
+        height: 34px
+
+      &:hover
+        .bottom-bar
+          width: 40px
+          margin-left: 0
+
+          @media (max-width: 850px)
+            width: 20px
+            margin-left: 12px
+
+
+      &.is-open
+        .bottom-bar
+          display: none
+          background: $white !important
+
+        .middle-bar
+          transform: rotate(45deg)
+          top: -5px
+          background: $white !important
+
+        .top-bar
+          transform: rotate(-45deg)
+          top: 4px
+          background: $white !important
+
+      span
+        color: $white
+        position: relative
+
+      .top-bar,
+      .middle-bar,
+      .bottom-bar
+        display: block
+        width: 40px
+        height: 2px
+        background: $white
+        margin-bottom: 7px
+        @extend %transition
+
+        @media (max-width: 850px)
+          width: 34px
+
+      .bottom-bar
+        width: 20px
+        margin-left: 20px
+
+        @media (max-width: 850px)
+          width: 18px
+          margin-left: 15px
+
+
+
+  // Main Navigation
+  nav.main-nav
+    width: 700px
+    margin-left: auto
+    margin-right: 80px
+    @extend %flex
+    @extend %transition
+
+    @media (max-width: 900px)
+      margin-right: 0
+
+    @media (max-width: 700px)
+      width: 100%
+      transform: translateY(-100%)
+
+    &.is-open
+      transform: translateY(0%)
+
+    ul.menu
+      @extend %flex
+      height: 80px
+
+      @media (max-width: 900px)
+        margin-left: auto
+        margin-right: auto
+
+      @media (max-width: 700px)
+        height: 100vh
+        background: $white
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-items: center
+
+      li
+        @extend %transition
+        transform: translateX(200px)
+        opacity: 0
+        margin: 0 15px
+
+        @media (max-width: 900px)
+          margin-left: 10px
+
+        @media (max-width: 700px)
+          transform: translateX(0px)
+          opacity: 1
+          margin: 15px 0
+
+        &.active
+          transform: translateX(0px)
+          opacity: 1
+
+      a
+        color: $dark-grey
+        position: relative
+        width: auto
+
+        &:hover
+          color: $dark-grey
+
+        &:hover span
+          width: 100%
+
+        @media (max-width: 550px)
+          font-size: 1.2rem
+
+        span
+          display: inline-block
+          margin: 0 auto
+          width: 0%
+          height: 3px
+          background: $dark-grey
+          position: absolute
+          bottom: -5px
+          left: 0
+          @extend %transition
+
+// Social nav
+ul.social
+  @extend %flex
+  height: 80px
+
+  @media (max-width: 900px)
+    display: none
+
+  li
+    padding: 0 23px
+    text-align: center
+    border-color: $light-grey
+    border-style: solid
+    border-width: 0 0 0 1px
+    height: 100%
+    margin: 0 !important
+    @extend %transition
+    transform: translateX(200px)
+    opacity: 0
+
+    &.active
+      transform: translateX(0px)
+      opacity: 1
+
+  a
+    height: calc(79px)
+    text-align: center
+    margin: 0 auto
+    line-height: 80px
+    @extend %flex

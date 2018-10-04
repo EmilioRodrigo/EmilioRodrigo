@@ -1,0 +1,97 @@
+// Grid system
+div.home-wrap,
+div.error-wrap
+  @extend %guide
+
+.col-2
+  width: 25%
+  height: 100%
+
+.col-3
+  width: 37.5%
+  height: 100%
+
+
+.col-5
+  width: 62.5%
+  height: 100%
+
+.flex
+  @extend %flex
+  max-width: calc(100vw - 160px)
+  margin: 0 auto
+
+  @media (max-width: 700px)
+    max-width: 100%
+
+article.flex
+  opacity: 0
+  transform: translateY(120px)
+  @extend %transition
+  transition-duration: 0.4s
+
+.description
+  max-width: 590px
+  margin: 0 auto
+  padding: 32px
+
+  p
+    margin: 40px 0
+    width: 100%
+    font-size: 1.2rem
+
+    @media (max-width: 1400px)
+      font-size: 1rem
+
+    @media (max-width: 1200px)
+      font-size: 1rem
+      margin: 20px 0
+
+
+@media (max-width: 1024px)
+  article.flex
+    flex-direction: column
+
+  div.col-3
+    width: 100%
+
+  div.col-5
+    width: 100%
+
+  .description
+    order: -1
+
+
+
+.icon-separator
+  width: 100%
+  max-width: 64px
+  margin-left: -8px
+
+
+// General Styles
+div.left-border
+  width: 80px
+  background: $white
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  border-right: 1px solid $light-grey
+  z-index: 2
+
+  @media (max-width: 700px)
+    display: none
+
+div.right-border
+  width: 80px
+  background: $white
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  border-left: 1px solid $light-grey
+  z-index: 2
+
+  @media (max-width: 700px)
+    display: none

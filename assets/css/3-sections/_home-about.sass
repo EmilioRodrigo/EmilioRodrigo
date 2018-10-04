@@ -1,0 +1,39 @@
+section.home-about
+  margin-top: 160px
+  @extend %guide
+
+
+  div.thumbnail-about
+    background:
+      image: url(/assets/img/home/about.jpg)
+      size: cover
+      position: center
+      repeat: no-repeat
+    height: 840px
+
+    @media (max-width: 1600px)
+      height: 640px
+
+    @media (max-width: 1024px)
+      height: 480px
+
+
+div.title
+  height: 80px
+  align-items: center
+
+  div.col-3
+    background: $dark-grey
+    color: $white
+
+    @media (max-width: 550px)
+      width: 100%
+
+    h2
+      margin-left: 64px
+
+  div.col-5
+    background: $light-grey
+
+    @media (max-width: 550px)
+      width: 0%

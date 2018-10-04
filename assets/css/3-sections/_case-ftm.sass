@@ -1,0 +1,189 @@
+.cases-wrap-ftm
+  overflow: hidden
+  max-width: calc(100% - 160px)
+  margin: 0 auto
+
+  @media (max-width: 700px)
+    max-width: 100%
+
+.header-ftm
+  background:
+    image: url(/assets/img/cases/ftm/header-bg.jpg)
+    repeat: no-repeat
+    position: center
+    size: cover
+  height: 100vh
+
+  @media (max-width: 1024px)
+    height: 75vh
+
+
+section.case-ftm
+  .intro
+    padding: 9rem 0
+
+    p
+      font-size: 1.4rem
+      color: $black
+      text-align: center
+      @extend %flex
+      max-width: 65rem
+      width: 90%
+      margin: 0 auto
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+
+      @media (max-width: 800px)
+        font-size: 1.2rem
+
+
+
+  .mockups
+    background:
+      image: url(/assets/img/cases/ftm/mockups.png)
+      repeat: no-repeat
+      position: center
+      size: cover
+      color: none
+    height: 480vh
+    position: relative
+    top: 50px
+
+    @media (min-height: 1070px)
+      height: 480vh
+
+    @media (min-height: 1070px)
+      height: 470vh
+
+    @media (max-width: 1280px)
+      height: 310vh
+
+
+
+  .concept, .objectives, .typography
+    background: $white
+    padding: 12rem 0
+
+    h2
+      font-size: 1.8rem
+      text-align: center
+      color: $white
+      text-shadow: none
+      margin: 1rem auto 2rem auto
+
+    article, p
+      color: $white
+      max-width: 50rem
+      width: 90%
+      margin: 0 auto
+      text-align: center
+      font-size: 1rem
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+      span
+        font-weight: 700
+
+  .concept
+    height: 155vh
+    background:
+     image: url(/assets/img/cases/ftm/macbook.jpg)
+     repeat: no-repeat
+     position: center
+     size: cover
+     color: transparent
+
+    @media (min-height: 1070px)
+     height: 135vh
+
+    @media (min-height: 1070px)
+      height: 125vh
+
+    @media (max-width: 1280px)
+     height: 95vh
+
+    @media (max-width: 1024px)
+      padding: 0
+      
+    article
+      padding: 0
+
+
+
+  .objectives
+    height: 115vh
+    padding: 6rem 0 12rem 0
+    background:
+     image: url(/assets/img/cases/ftm/background.jpg)
+     repeat: no-repeat
+     position: center
+     size: cover
+
+    @media (max-width: 1000px)
+      height: 75vh
+
+    article
+      padding: 9em 0 6em 0
+
+      @media (max-width: 1024px)
+        padding-top: 0
+
+  .iphone
+    position: relative
+    height: 95vh
+    bottom: 0
+    background-color: transparent
+
+    @media (max-width: 1280px)
+      height: 70vh
+
+    @media (max-width: 1000px)
+      display: none
+
+
+  .typography
+    height: 175vh
+    background:
+     image: url(/assets/img/cases/ftm/ipad-bg.png)
+     repeat: no-repeat
+     position: center
+     size: cover
+
+    @media (max-width: 1280px)
+      height: 120vh
+
+    article
+      padding-top: 9rem
+
+      @media (max-width: 1024px)
+        padding-top: 0
+
+
+  .conclusion
+    background: $white
+    padding-top: 6rem
+    padding-bottom: 12rem
+
+    h2
+      font-size: 1.8rem
+      text-align: center
+      color: $black
+      text-shadow: none
+      margin: 1rem auto 2rem auto
+
+    article, p
+      color: $black
+      max-width: 50rem
+      width: 90%
+      margin: 0 auto
+      text-align: center
+      font-size: 1rem
+      opacity: 0
+      transform: translateY(60px)
+      @extend %transition
+
+      span
+        font-weight: 700
